@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" class="logo" alt="Unit converter logo">
+    <h1>Unit Converter</h1>
+    <p>A simple tool for converting length, weight, and temperature units.</p>
+  </header>
+  <main>
+    <div class="bg-wrap">
+      <div class="bg-illustration">
+        <img src="images/background.svg" class="illustration" alt="">
+      </div>
+    </div>
+    <form novalidate autocomplete="off" spellcheck="false">
+      <div class="field">
+        <label for="unit-type">Unit Type:</label>
+        <select name="unit-type" id="unit-type">
+          <!-- Options will be populated dynamically -->
+        </select>
+      </div>
+      <div class="field">
+        <label for="input-value">Enter Value:</label>
+        <input type="number" id="input-value" placeholder="Enter value to convert">
+        <p class="field-error"></p>
+      </div>
+      <div class="field">
+        <label for="from-unit">From:</label>
+        <select name="from-unit" id="from-unit">
+          <!-- Options will be populated dynamically -->
+        </select>
+      </div>
+      <div class="field">
+        <label for="to-unit">To:</label>
+        <select name="to-unit" id="to-unit">
+          <!-- Options will be populated dynamically -->
+        </select>
+      </div>
+      <div class="result">
+        <p class="result-label">Result</p>
+        <div class="result-value">
+          <span class="result-number"></span>
+          <span class="result-unit"></span>
+          <span class="result-empty"></span>
+        </div>
+        <p class="result-meta"></p>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>Unit Converter is a small learning project built with plain HTML, CSS, and JavaScript. It focuses on form handling, client-side validation, and basic DOM manipulation. The source code is available on <a href="https://rastislavelias.github.io/unit-converter/" target="_blank">GitHub <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" viewBox="0 0 256 256"><path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"></path></svg></a>. Created by <a href="https://rastislavelias.com" target="_blank">Rastislav Elias <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000" viewBox="0 0 256 256"><path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"></path></svg></a>.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
